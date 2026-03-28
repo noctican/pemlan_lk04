@@ -1,4 +1,4 @@
-package src;
+package src.dataInterface;
 
 public interface Transaksi {
     public void prosesTransaksi();
