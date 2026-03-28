@@ -31,17 +31,14 @@ public class RekeningValas extends Rekening implements TransferGlobal {
 
     @Override
     public void verifikasiToken() {
-
     }
 
     @Override
     public void konversiMataUang(String mataTujuan) {
-
     }
 
     @Override
     public void transferGlobal(String rekTujuan, String mataUang, double jumlah) {
-
     }
 
     @Override
