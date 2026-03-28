@@ -22,4 +22,31 @@ public class Rekening {
     public double getSaldo(){
         return this.saldo;
     }
+
+    public String getNomorRekening() {
+        return this.nomorRekening;
+    }
+
+    public boolean cekPIN(String pinInput) {
+        return this.pin.equals(pinInput);
+    }
+
+    public boolean withdraw(double jumlah) {
+        if (jumlah > 0 && saldo >= jumlah) {
+            saldo -= jumlah;
+            System.out.println("Penarikan sebesar " + jumlah + " berhasil.");
+            System.out.println("Sisa saldo: " + saldo);
+            return true;
+        }
+        System.out.println("Penarikan gagal! Saldo tidak mencukupi.");
+        return false;
+    }
+
+    protected void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    protected String getPin(){
+        return pin;
+    }
 }

@@ -1,7 +1,7 @@
 package src.dataInterface;
 
 public interface Transaksi {
-    public void prosesTransaksi(double jumlah);
+    public void prosesTransaksi(double jumlah, String pin);
 
     public double getJumlah();
 }
