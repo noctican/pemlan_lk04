@@ -23,7 +23,7 @@ public class RekeningValas extends Rekening implements TransferGlobal {
     public void prosesTransaksi(double jumlah, String pin) {
          System.out.println("\nMEMPROSES TRANSAKSI SEBESAR " + jumlah + " " + mataUang);
         
-        if (versiProtokol.validasiTransaksi(this, getPINForValidation(pin))) {
+        if (versiProtokol.validasiTransaksi(this, pin)) {
             if (withdraw(jumlah)) {
                 System.out.println("Transaksi berhasil diproses!");
             } else {
@@ -37,7 +37,7 @@ public class RekeningValas extends Rekening implements TransferGlobal {
     public void prosesTransaksi(double jumlah, String pin, String tokenOTP) {
         System.out.println("\nMEMPROSES TRANSAKSI SEBESAR " + jumlah + " " + mataUang);
         
-        if (versiProtokol.validasiTransaksi(this, getPINForValidation(pin), tokenOTP)) {
+        if (versiProtokol.validasiTransaksi(this, pin, tokenOTP)) {
             if (withdraw(jumlah)) {
                 System.out.println("Transaksi berhasil diproses!");
             } else {
@@ -149,15 +149,6 @@ public class RekeningValas extends Rekening implements TransferGlobal {
     @Override
     public String getKodeSWIFT() {
         return kodeSWIFT;
-    }
-
-    private String getPINForValidation(String pin) {
-        if (pin.equals(getPin())){
-            return getPin();
-        }
-        else {
-            return null;
-        }
     }
 
     private double getKurs(String mataUangTujuan) {
