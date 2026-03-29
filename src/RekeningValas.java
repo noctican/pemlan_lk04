@@ -1,7 +1,7 @@
 package src;
 
-import src.dataInterface.*;
 import java.util.Scanner;
+import src.dataInterface.*;
 
 public class RekeningValas extends Rekening implements TransferGlobal {
     // Atribut
@@ -86,10 +86,11 @@ public class RekeningValas extends Rekening implements TransferGlobal {
     @Override
     public double hitungBiayaKurs(double jumlah, String mataUangAsing) {
         double kurs = getKurs(mataUangAsing);
-        double biayaAdmin = jumlah * BIAYA_ADMIN_INTERNASIONAL;
-        double totalBiaya = (jumlah * kurs) + biayaAdmin;
+        double totalDalamAsing = jumlah * kurs;
+        double biayaAdmin = totalDalamAsing * BIAYA_ADMIN_INTERNASIONAL;
+        double totalBiaya = totalDalamAsing + biayaAdmin;
         System.out.println("Kurs " + mataUangAsing + " ke " + mataUang + ": 1 " + mataUangAsing + " = " + kurs + " " + mataUang);
-        System.out.println("Biaya admin internasional: " + biayaAdmin + " " + mataUang);
+        System.out.println("Biaya admin internasional (2%): " + biayaAdmin + " " + mataUang);
         return totalBiaya;
     }
 
