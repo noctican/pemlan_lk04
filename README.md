@@ -15,6 +15,10 @@
             <td>255150200111035</td>
             <td>
                 <ul>
+                    <li>Merancang Class Diagram.</li>
+                    <li>Mengimplementasikan interface.</li>
+                    <li>Perbaikan logika kode class RekeningValas.</li>
+                    <li>Menyusun laporan.</li>
                 </ul>
             </td>
         </tr>
@@ -23,6 +27,10 @@
             <td>255150201111031</td>
             <td>
                 <ul>
+                    <li>Menyusun awal class diagram.</li>
+                    <li>Membuat hubungan antar class.</li>
+                    <li>Menentukan beberapa method awal.</li>
+                    <li>Membuat awal kode inheritance rekening.</li>
                 </ul>
             </td>
         </tr>
@@ -31,6 +39,9 @@
             <td>255150207111064</td>
             <td>
                 <ul>
+                    <li>Melanjutkan dan melengkapi pada Class Diagram.</li>
+                    <li>Melakukan penyesuaian pada class RekeningValas.</li>
+                    <li>Melakukan penyesuaian laporan.</li>
                 </ul>
             </td>
         </tr>
@@ -39,6 +50,9 @@
             <td>255150201111026</td>
             <td>
                 <ul>
+                    <li>Menyesuaikan Class Diagram.</li>
+                    <li>Mengimplementasikan class Main.</li>
+                    <li>Melakukan penyesuaian pada final class ProtokolKeamanan.</li>
                 </ul>
             </td>
         </tr>
@@ -47,6 +61,9 @@
             <td>255150201111030</td>
             <td>
                 <ul>
+                    <li>Memperbaiki Class Diagram.</li>
+                    <li>Melengkapi method-method pada setiap class.</li>
+                    <li>Membuat class Main menjadi interaktif.</li>
                 </ul>
             </td>
         </tr>
